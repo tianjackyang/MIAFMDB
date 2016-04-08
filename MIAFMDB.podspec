@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MIAFMDB"
-  s.version      = "0.0.9"
+  s.version      = "0.1.9"
   s.summary      = "MIAFMDB."
 
   # This description is used to generate tags and improve search results.
@@ -136,4 +136,5 @@ Pod::Spec.new do |s|
   s.dependency "FMDB/standard", ">= 2.3"
   s.dependency "MIADefine", "~> 0.0.3"
   s.dependency "Mantle", '~> 2.0.6'
+  s.dependency "MIAFileManager", '~> 0.0.2'
 end
