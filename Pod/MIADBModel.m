@@ -173,6 +173,27 @@
                 return ;
             }
         }
+        
+        //创建索引
+        NSArray *uniqueIdx = [self.class uniqueIndex];
+        if (uniqueIdx.count > 0) {
+            NSMutableString *sqlString = [NSMutableString stringWithFormat:@"create unique index if not exists %@_index on %@ (", tableName, tableName];
+            int i;
+            for (i = 0; i < uniqueIdx.count; i++) {
+                NSString *index = uniqueIdx[i];
+                if (i > 0) {
+                    [sqlString appendString:@", "];
+                }
+                [sqlString appendString:index];
+            }
+            [sqlString appendString:@")"];
+            
+            BOOL result = [db executeUpdate:sqlString];
+            if (!result) {
+                SLMLogObject(sqlString);
+                SLMLog(@"create table %@ failed", tableName);
+            }
+        }
     }];
     
     return res;
@@ -553,6 +574,16 @@
  *  @return 返回的主键字段
  */
 + (NSArray *)primarykeys {
+    return [NSArray array];
+}
+
+/**
+ *  如果子类中的字典设置为唯一索引，那么这个方法必须在子类中重写，这数据唯一
+ *
+ *  @return 返回唯一索引字段
+ */
++ (NSArray *)uniqueIndex
+{
     return [NSArray array];
 }
 

@@ -95,4 +95,11 @@
  *  @return 返回需要设置的主键字段
  */
 + (NSArray *)primarykeys;
+
+/**
+ *  索引
+ *
+ *  @return 返回需要创建索引的字段
+ */
++ (NSArray *)uniqueIndex;
 @end
