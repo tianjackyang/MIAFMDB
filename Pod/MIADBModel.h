@@ -1,6 +1,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Mantle.h"
 
 /** SQLite五种数据类型 */
 #define SQLTEXT     @"TEXT"     //字符串
@@ -11,7 +12,7 @@
 
 #define PrimaryKey  @"primary key"
 
-@interface MIADBModel : NSObject
+@interface MIADBModel : MTLModel
 
 //列名
 @property (retain, readonly, nonatomic) NSMutableArray         *columeNames;
