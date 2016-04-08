@@ -3,7 +3,7 @@
 //
 
 #import "ExampleMantle.h"
-#import "DBMovie.h"
+#import "MantleMovieModel.h"
 
 @implementation Example
 

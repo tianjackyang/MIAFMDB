@@ -3,7 +3,7 @@
 //
 
 #import "ExampleFMDB.h"
-#import "User.h"
+#import "UserModel.h"
 #import "Depart.h"
 #import "MIADBHelper.h"
 #import "MIAFileManager.h"
