@@ -2,7 +2,7 @@
 //  Example.m
 //
 
-#import "ExampleMantle.h"
+/*#import "ExampleMantle.h"
 #import "MantleMovieModel.h"
 
 @implementation Example
@@ -35,4 +35,4 @@
     
 }
 
-@end
+@end*/

@@ -2,7 +2,7 @@
 //  Example.m
 //
 
-#import "ExampleFMDB.h"
+/*#import "ExampleFMDB.h"
 #import "UserModel.h"
 #import "MIADBHelper.h"
 #import "MIAFileManager.h"
@@ -168,4 +168,4 @@
     NSArray *array = [User findByCriteria:[NSString stringWithFormat:@" WHERE age > %d limit 10",24]];
     NSLog(@"array:%@",array);
 }
-@end
+@end*/

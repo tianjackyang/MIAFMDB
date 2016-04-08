@@ -4,7 +4,7 @@
 //
 //
 
-#import "MantleMovieModel.h"
+/*#import "MantleMovieModel.h"
 
 #pragma mark - DBMovie
 @implementation DBMovie
@@ -162,4 +162,4 @@
     }];
 }
 
-@end
+@end*/
