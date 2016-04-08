@@ -190,8 +190,7 @@
             
             BOOL result = [db executeUpdate:sqlString];
             if (!result) {
-                SLMLogObject(sqlString);
-                SLMLog(@"create table %@ failed", tableName);
+                NSLog(@"create table %@ failed", tableName);
             }
         }
     }];
