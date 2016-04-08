@@ -2,7 +2,7 @@
 //  User.m
 //
 
-/*#import "User.h"
+#import "UserModel.h"
 #import "MIADBHelper.h"
 
 @interface User ()
@@ -48,4 +48,4 @@
 {
     return [NSArray arrayWithObjects:@"account", nil];
 }
-@end*/
+@end
