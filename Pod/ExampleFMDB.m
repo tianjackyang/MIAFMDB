@@ -4,7 +4,6 @@
 
 #import "ExampleFMDB.h"
 #import "UserModel.h"
-#import "Depart.h"
 #import "MIADBHelper.h"
 #import "MIAFileManager.h"
 

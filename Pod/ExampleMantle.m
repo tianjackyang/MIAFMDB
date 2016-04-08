@@ -28,8 +28,7 @@
                                                                           error:nil];
         
         DBMovie * movie = [MTLJSONAdapter modelOfClass:[DBMovie class] fromJSONDictionary:jsonDictionary error:nil];
-        
-#warning 在这边设置断点查看对象
+        NSLog("%@", movie);
         
         [[[UIAlertView alloc]initWithTitle:@"信息" message:@"获取成功" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil]show];
     }];
